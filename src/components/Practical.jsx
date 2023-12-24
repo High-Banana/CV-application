@@ -1,9 +1,9 @@
 export default function Practical() {
   return (
-    <div className="flex flex-col text-white my-[50px] mx-[100px] gap-[30px]">
+    <div className="flex flex-col text-white my-[50px] mx-[50px] gap-[30px] col-start-1">
       <h2 className="text-white text-3xl font-bold pl-[20px]">Practical Experience</h2>
       <div className=" bg-[#202020] p-[40px] rounded-lg gap-[20px] min-w-[100%]">
-        <form className="grid grid-cols-2 gap-[50px]">
+        <form className="flex flex-col gap-[50px]">
           <div className="flex flex-col gap-[10px]">
             <label className="font-semibold">
               Company Name <small>(Short form works)</small>

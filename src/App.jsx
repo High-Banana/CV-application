@@ -4,7 +4,7 @@ import Practical from "./components/Practical";
 
 export default function App() {
   return (
-    <div className="flex flex-col min-h-screen min-w-full bg-[#171717]">
+    <div className="grid grid-cols-2 min-h-screen min-w-full bg-[#171717]">
       <General />
       <Educational />
       <Practical />
