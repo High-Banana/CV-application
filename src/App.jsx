@@ -1,3 +1,9 @@
+import General from "./components/General";
+
 export default function App() {
-  return <h1 className="underline">Hello world!</h1>;
+  return (
+    <div className="flex justify-center min-h-screen min-w-full bg-[#171717]">
+      <General />
+    </div>
+  );
 }
