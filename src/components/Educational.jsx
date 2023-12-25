@@ -11,7 +11,7 @@ export default function Educational({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="Name of the school"
+              placeholder="Mrs. Puff's Boarding School"
               id="schoolName"
               onChange={(event) => getGeneralInfo({ ...generalInfo, schoolName: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
@@ -24,6 +24,7 @@ export default function Educational({ getGeneralInfo, generalInfo }) {
             <input
               type="text"
               id="studyTitle"
+              placeholder="Boating"
               onChange={(event) => getGeneralInfo({ ...generalInfo, studyTitle: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
@@ -34,7 +35,7 @@ export default function Educational({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="From-To (Year)"
+              placeholder="1999 - Present"
               id="studyDate"
               onChange={(event) => getGeneralInfo({ ...generalInfo, studyDate: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
@@ -46,7 +47,7 @@ export default function Educational({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="School Address"
+              placeholder="Bikini Bottom"
               id="schoolAddress"
               onChange={(event) => getGeneralInfo({ ...generalInfo, schoolAddress: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"

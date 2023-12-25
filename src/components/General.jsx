@@ -48,7 +48,7 @@ export default function General({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="tel"
-              placeholder="+123 1234567890"
+              placeholder="707 663 GARY"
               pattern="[0-9]{3}-[0-9]{3}-[A-Z]{4}"
               id="phone"
               autoComplete="off"
@@ -63,7 +63,7 @@ export default function General({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="City name"
+              placeholder="Bikini Bottom, Pacific Ocean"
               id="address"
               autoComplete="off"
               onChange={(event) => getGeneralInfo({ ...generalInfo, address: event.target.value })}

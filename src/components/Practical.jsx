@@ -11,7 +11,7 @@ export default function Practical({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="Name of the company"
+              placeholder="The Krusty Krab"
               id="companyName"
               onChange={(event) => getGeneralInfo({ ...generalInfo, companyName: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
@@ -23,7 +23,7 @@ export default function Practical({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="Title of the job"
+              placeholder="Fry cook"
               id="positionTitle"
               onChange={(event) => getGeneralInfo({ ...generalInfo, jobPosition: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
@@ -47,7 +47,7 @@ export default function Practical({ getGeneralInfo, generalInfo }) {
             </label>
             <input
               type="text"
-              placeholder="2010 - 2018"
+              placeholder="1998 - Present"
               id="jobDate"
               onChange={(event) => getGeneralInfo({ ...generalInfo, jobDate: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
