@@ -12,8 +12,20 @@ export default function General({ getGeneralInfo, generalInfo }) {
             <input
               type="text"
               placeholder="Spongebob Squarepants"
-              onChange={(event) => getGeneralInfo({ ...generalInfo, name: event.target.value })}
+              onChange={(event) => getGeneralInfo({ ...generalInfo, fullName: event.target.value })}
               id="fullname"
+              className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
+            ></input>
+          </div>
+          <div className="flex flex-col gap-[10px]">
+            <label className="font-semibold" htmlFor="birthDate">
+              Birth Date
+            </label>
+            <input
+              type="text"
+              placeholder="July 14th, 1986"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, birthDate: event.target.value })}
+              id="birthDate"
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
@@ -32,21 +44,22 @@ export default function General({ getGeneralInfo, generalInfo }) {
           </div>
           <div className="flex flex-col gap-[10px]">
             <label className="font-semibold" htmlFor="phone">
-              Phone Number <small>(Optional)</small>
+              Phone Number
             </label>
             <input
               type="tel"
               placeholder="+123 1234567890"
-              pattern="[0-9]{3}-[0-9]{10}"
+              pattern="[0-9]{3}-[0-9]{3}-[A-Z]{4}"
               id="phone"
               autoComplete="off"
+              maxLength={22}
               onChange={(event) => getGeneralInfo({ ...generalInfo, phoneNumber: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
           <div className="flex flex-col gap-[10px]">
             <label className="font-semibold" htmlFor="address">
-              Address <small>(Optional)</small>
+              Address
             </label>
             <input
               type="text"

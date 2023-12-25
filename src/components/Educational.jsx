@@ -1,4 +1,5 @@
-export default function Educational() {
+/* eslint-disable react/prop-types */
+export default function Educational({ getGeneralInfo, generalInfo }) {
   return (
     <div className="flex flex-col text-white my-[50px] mx-[50px] gap-[30px] col-start-1">
       <h2 className="text-white text-3xl font-bold pl-[20px]">Educational Experience</h2>
@@ -12,6 +13,7 @@ export default function Educational() {
               type="text"
               placeholder="Name of the school"
               id="schoolName"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, schoolName: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
@@ -22,6 +24,7 @@ export default function Educational() {
             <input
               type="text"
               id="studyTitle"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, studyTitle: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
@@ -33,17 +36,19 @@ export default function Educational() {
               type="text"
               placeholder="From-To (Year)"
               id="studyDate"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, studyDate: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
           <div className="flex flex-col gap-[10px]">
             <label className="font-semibold" htmlFor="schoolAddress">
-              Address <small>(Optional)</small>
+              Address
             </label>
             <input
               type="text"
               placeholder="School Address"
               id="schoolAddress"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, schoolAddress: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>

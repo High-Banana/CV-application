@@ -1,4 +1,5 @@
-export default function Practical() {
+/* eslint-disable react/prop-types */
+export default function Practical({ getGeneralInfo, generalInfo }) {
   return (
     <div className="flex flex-col text-white my-[50px] mx-[50px] gap-[30px] col-start-1">
       <h2 className="text-white text-3xl font-bold pl-[20px]">Practical Experience</h2>
@@ -12,6 +13,7 @@ export default function Practical() {
               type="text"
               placeholder="Name of the company"
               id="companyName"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, companyName: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
@@ -23,6 +25,7 @@ export default function Practical() {
               type="text"
               placeholder="Title of the job"
               id="positionTitle"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, jobPosition: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
@@ -34,6 +37,7 @@ export default function Practical() {
               type=""
               placeholder="Describe your job role in brief"
               id="jobResponsibility"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, jobDescription: event.target.value })}
               className="border-2 bg-[#474747] text-white min-h-[150px] p-[7px] placeholder:text-[#c0c0c0]"
             ></textarea>
           </div>
@@ -45,6 +49,7 @@ export default function Practical() {
               type="text"
               placeholder="2010 - 2018"
               id="jobDate"
+              onChange={(event) => getGeneralInfo({ ...generalInfo, jobDate: event.target.value })}
               className="border-2 bg-[#474747] text-white h-[40px] p-[7px] placeholder:text-[#c0c0c0]"
             ></input>
           </div>
